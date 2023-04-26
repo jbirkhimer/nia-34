@@ -23,7 +23,7 @@ cli_binary_format = raw-in-base64-out
 region = us-gov-west-1
 ```
 
-> **NOTE:** if you want to use another profile other than `default` you need to edit the [NIACadroLambdaFunction.php](./src/NIACadroLambdaFunction.php) file and change the line with `$profile = 'default';`
+> **NOTE:** if you want to use another profile other than `default` you need to edit the [LambdaFunctionRunner.php](./src/LambdaFunctionRunner.php) file and change the line with `'profile' = 'default';`
 
 If you don’t provide a credentials file, the SDK attempts to load credentials from your environment in the following order:
 1. Load credentials from environment variables.
